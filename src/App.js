@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
+
 import ReactTooltip from "react-tooltip";
-import PersonList from "./fetch";
+//import PersonList from "./fetch";
 
 import "./styles.css";
 
@@ -13,7 +13,7 @@ function App() {
     <div>
       <MapChart setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
-      <PersonList />
+    
     </div>
   );
 }
