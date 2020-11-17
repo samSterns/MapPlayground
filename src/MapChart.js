@@ -5,6 +5,7 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
+import PersonList from "./fetch";
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
@@ -19,6 +20,8 @@ const rounded = num => {
   }
 };
 
+//const APItitle = 
+
 const MapChart = ({ setTooltipContent }) => {
   return (
     <>
@@ -31,8 +34,9 @@ const MapChart = ({ setTooltipContent }) => {
                   key={geo.rsmKey}
                   geography={geo}
                   onMouseEnter={() => {
-                    const { NAME, POP_EST } = geo.properties;
-                    setTooltipContent(`${NAME} — ${rounded(POP_EST)}`);
+                    console.log(geo.properties);
+                    const { NAME } = geo.properties;
+                    setTooltipContent(`${NAME}`);
                   }}
                   onMouseLeave={() => {
                     setTooltipContent("");
