@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-
 import ReactTooltip from "react-tooltip";
 import Header from './Header';
-
-import PersonList from "./fetch";
-
 import "./styles.css";
-
 import MapChart from "./MapChart";
 
 function App() {
@@ -17,9 +12,7 @@ function App() {
       <main>
         <MapChart setTooltipContent={setContent} />
         <ReactTooltip>{content}</ReactTooltip>
-      
       </main>
-      <PersonList />
     </>
   );
 }

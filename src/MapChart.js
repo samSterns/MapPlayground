@@ -5,9 +5,8 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
-// import PersonList from "./fetch";
 import exampleData from './ExampleData.json';
-// const exampleData = JSON.parse(exampleData.json)
+
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 

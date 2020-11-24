@@ -1,13 +1,14 @@
 import React from "react";
+import styles from "./header.css"
 
 function Header() {
     
     return (
        
-            <p>
+            <div className={styles.header}> 
             Privacy Map
             
-            </p>
+            </div>
       
     );
   }
